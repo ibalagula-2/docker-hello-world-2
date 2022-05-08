@@ -8,10 +8,15 @@ steps:
   commands:
   - echo hellpo
   - echo world
+- name: test
+  image: python
+  commands:
+  - pip install -r requirements.txt
+  - pytest  
 - name: docker  
   image: plugins/docker
   settings:
-    # registry: docker.io file 3
+    # registry: docker.io file 4
     repo: ibalagula2/docker-hello-world-2
     username:
       from_secret: docker_username
