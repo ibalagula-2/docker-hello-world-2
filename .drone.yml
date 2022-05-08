@@ -3,6 +3,11 @@ type: docker
 name: hello-world
 
 steps:
+- name: greeting  
+  image: plugins/docker
+  commands:
+  - echo hellpo
+  - echo world
 - name: docker  
   image: plugins/docker
   settings:
