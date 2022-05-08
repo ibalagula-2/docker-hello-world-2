@@ -6,8 +6,8 @@ steps:
 - name: docker  
   image: plugins/docker
   settings:
-    # registry: docker.io
-    repo: ibalagula2/docker-hello-world
+    # registry: docker.io file 3
+    repo: ibalagula2/docker-hello-world-2
     username:
       from_secret: docker_username
     password:
